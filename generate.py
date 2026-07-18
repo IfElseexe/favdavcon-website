@@ -11,7 +11,7 @@ ADDR = "No 45, Abuja Million Estate, Aso Rock Villa, Guzape, Abuja, FCT, Nigeria
 
 CATS = [
  ("uniforms", "Uniforms & Accoutrements", "camo",
-  "High-quality camouflage, OG greens (Tetrons), caps, berets, buttons and full ceremonial kit — imported and supplied to specification.",
+  "High-quality camouflage, OG greens (Tetrons), caps, berets, buttons and full ceremonial kit, imported and supplied to specification.",
   [("camo","Camouflage Uniforms","Combat camouflage sets produced to service specification, in full size ranges."),
    ("greens","Ceremonial & OG Green Uniforms","OG greens (Tetrons) and ceremonial dress for parades and formal duties."),
    ("calendar","Caps, Berets & Insignia","Caps, berets, buttons, badges and rank insignia to regulation standard.")]),
@@ -21,7 +21,7 @@ CATS = [
    ("nightvision","Night Vision Equipment","Night-vision goggles and optical equipment for night operations."),
    ("camo","Field Kit & Accessories","Webbing, kit bags and field accessories to complete the soldier's loadout.")]),
  ("security-systems", "Security Systems & Consultancy", "drone",
-  "Security consultancy services and supply of surveillance and communications equipment — drones, CCTV, radios and more.",
+  "Security consultancy services and supply of surveillance and communications equipment: drones, CCTV, radios and more.",
   [("consult","Security Consultancy","Professional advisory on security architecture, assessments and planning."),
    ("cctv","CCTV Surveillance Systems","Camera systems, DVR/NVR equipment and monitoring infrastructure."),
    ("install","Installation & Maintenance","Professional installation, configuration and after-supply support."),
@@ -36,11 +36,11 @@ CATS = [
    ("cabinet","Storage & Filing Cabinets","Secure storage and filing solutions for offices."),
    ("safe","Security Safes","Fire-resistant safes for documents, valuables and sensitive items.")]),
  ("vehicles", "Operational Vehicles", "truck",
-  "Supply of all types of operational vehicles — troop-carrying trucks, staff buses and utility fleets.",
+  "Supply of all types of operational vehicles: troop-carrying trucks, staff buses and utility fleets.",
   [("truck","Operational Trucks","Heavy-duty covered trucks for logistics, transport and operations."),
    ("bus","Staff & Troop Buses","Coaches and buses for personnel movement and institutional transport.")]),
  ("printing-services", "Printing & Environmental Services", "printer",
-  "General printing — from branded stationery to large-format work — plus beautification and fumigation services.",
+  "General printing, from branded stationery to large-format work, plus beautification and fumigation services.",
   [("printer","Large-Format & General Printing","Banners, documents and large-format printing on modern machines."),
    ("notebooks","Branded Notebooks & Stationery","Corporate notebooks, jotters and official stationery."),
    ("bag","Branded Bags & Packaging","Custom-branded bags and premium packaging."),
@@ -49,7 +49,7 @@ CATS = [
 ]
 
 REGS = [
- ("CAC Incorporation", "RC 7971283", "Corporate Affairs Commission — incorporated under CAMA 2020"),
+ ("CAC Incorporation", "RC 7971283", "Corporate Affairs Commission, incorporated under CAMA 2020"),
  ("Bureau of Public Procurement", "Ref 0000-0018-5065", "Registered federal contractor and service provider"),
  ("SCUML (EFCC)", "RN SC 152116691", "Special Control Unit Against Money Laundering registration"),
  ("PenCom Clearance", "PR0000126716", "Pension Reform Act 2014 compliance"),
@@ -177,7 +177,7 @@ def nav(active):
 
 FOOTER = f"""<footer><div class="f-grid">
 <div><div class="f-brand">{BRAND}</div>
-<p>Military &amp; paramilitary procurement, security systems, office supply, operational vehicles and printing services. Incorporated under CAMA 2020 — RC 7971283.</p>
+<p>Military &amp; paramilitary procurement, security systems, office supply, operational vehicles and printing services. Incorporated under CAMA 2020, RC 7971283.</p>
 <p style="margin-top:10px">{ADDR}</p></div>
 <div><h4>Products &amp; Services</h4><ul>""" + "".join(f'<li><a href="{c[0]}.html">{c[1]}</a></li>' for c in CATS) + f"""</ul></div>
 <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="leadership.html">Leadership</a></li><li><a href="quote.html">Request a Quote</a></li><li><a href="contact.html">Contact</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div></div>
@@ -210,7 +210,7 @@ index_body = f"""
 <section class="hero"><div class="wrap">
 <span class="eyebrow" style="color:var(--gold)">Abuja · Federal Contractor · RC 7971283</span>
 <h1>Equipping those who <em>defend the nation.</em></h1>
-<p>FAVDAVCON AND CG NIG LTD is a technology-oriented supply company serving Nigeria's military, paramilitary and corporate institutions — led by a retired Army officer with over three decades of service, including procurement legal oversight at Army Headquarters.</p>
+<p>FAVDAVCON AND CG NIG LTD is a technology-oriented supply company serving Nigeria's military, paramilitary and corporate institutions. The company is led by a retired Army officer with over three decades of service, including procurement legal oversight at Army Headquarters.</p>
 <div class="hero-cta"><a class="btn" href="quote.html">Request a Quote</a><a class="btn btn-line" href="products.html">Our Products &amp; Services</a></div>
 <div class="hero-reg">CAC · BPP · SCUML · PenCom · NSITF · ITF Registered &amp; Compliant</div>
 </div></section>
@@ -222,19 +222,19 @@ index_body = f"""
 </div></div>
 <section class="sec"><div class="wrap">
 <div class="sec-head"><span class="eyebrow">What We Supply</span><h2>Products &amp; Services</h2>
-<p>From uniforms and field kit to vehicles, security systems and complete office fit-outs — every category is handled to institutional standard.</p></div>
+<p>From uniforms and field kit to vehicles, security systems and complete office fit-outs, every category is handled to institutional standard.</p></div>
 <div class="grid g3">{cat_cards}</div>
 </div></section>
 <section class="sec dark"><div class="wrap">
 <div class="sec-head"><span class="eyebrow">Why Institutions Trust Us</span><h2>Fully Registered. Fully Compliant.</h2>
-<p>Procurement begins with paperwork. Ours is complete — six federal registrations and clearances held and current.</p></div>
+<p>Procurement begins with paperwork. Ours is complete: six federal registrations and clearances held and current.</p></div>
 <div class="regs">{regs_html}</div>
 </div></section>
 <section class="sec white"><div class="wrap split">
 <div class="portrait"><img src="img/ceo.webp" alt="Major Barr. Christopher Onowoakpor Imegu (rtd), CEO"></div>
 <div><span class="eyebrow">Leadership</span>
 <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)">Led by 34 years inside the system we serve</h2>
-<p style="color:var(--ink-soft);margin:14px 0">Our CEO, Major Barr. Christopher Onowoakpor Imegu (rtd), served the Nigerian Army for over three decades — including as Deputy Director Legal Services and Procurement Legal Officer at Army Headquarters. We understand what the Armed Forces need, and exactly how they procure it.</p>
+<p style="color:var(--ink-soft);margin:14px 0">Our CEO, Major Barr. Christopher Onowoakpor Imegu (rtd), served the Nigerian Army for over three decades, including as Deputy Director Legal Services and Procurement Legal Officer at Army Headquarters. We understand what the Armed Forces need, and exactly how they procure it.</p>
 <a class="btn" href="leadership.html">Meet Our Leadership</a></div>
 </div></section>
 <section class="sec dark" style="text-align:center"><div class="wrap">
@@ -242,7 +242,7 @@ index_body = f"""
 <p style="color:var(--muted);margin:12px auto 26px;max-width:52ch">Tell us what your institution needs and receive a formal quotation promptly.</p>
 <a class="btn" href="quote.html">Request a Quote</a>
 </div></section>"""
-page("index.html", f"{BRAND} — Military & Corporate Supply, Abuja", "Military and paramilitary procurement, security systems, office supply, operational vehicles and printing services. RC 7971283, BPP-registered federal contractor in Abuja.", "index.html", index_body)
+page("index.html", f"{BRAND} | Military & Corporate Supply, Abuja", "Military and paramilitary procurement, security systems, office supply, operational vehicles and printing services. RC 7971283, BPP-registered federal contractor in Abuja.", "index.html", index_body)
 
 # ---------- ABOUT ----------
 about_body = f"""
@@ -252,7 +252,7 @@ about_body = f"""
 <section class="sec"><div class="wrap" style="max-width:820px">
 <span class="eyebrow">Who We Are</span>
 <h2 style="margin-bottom:16px">Bridging the gaps in military logistics</h2>
-<p style="color:var(--ink-soft);margin-bottom:14px">FAVDAVCON AND CG NIG LTD was incorporated on 2nd October 2024 under the Companies and Allied Matters Act 2020 (RC 7971283). Our services range from military and paramilitary procurement of accoutrements — uniform materials and kits — to office furniture, operational vehicles, printing services, environmental services such as beautification and fumigation, and security and corporate services.</p>
+<p style="color:var(--ink-soft);margin-bottom:14px">FAVDAVCON AND CG NIG LTD was incorporated on 2nd October 2024 under the Companies and Allied Matters Act 2020 (RC 7971283). Our services range from military and paramilitary procurement of accoutrements, such as uniform materials and kits, to office furniture, operational vehicles, printing services, environmental services such as beautification and fumigation, and security and corporate services.</p>
 <p style="color:var(--ink-soft);margin-bottom:14px">No army in the world succeeds without logistics. Our purpose is to complement the Nigerian Armed Forces and paramilitary organisations with the supply of quality accoutrements for the adequate and smart functioning of the system.</p>
 <div class="grid g2" style="margin-top:30px">
 <div class="reg" style="background:var(--white);border-color:#D6D3C2"><b style="color:var(--olive)">Our Vision</b><p style="color:var(--ink-soft);margin-top:8px">To supply military accoutrement, office equipment and all other accessories that enable the military to perform their roles effectively and efficiently.</p></div>
@@ -260,11 +260,11 @@ about_body = f"""
 </div></div></section>
 <section class="sec dark"><div class="wrap">
 <div class="sec-head"><span class="eyebrow">Registrations &amp; Compliance</span><h2>Our Credentials</h2>
-<p>Every registration a procuring entity expects — held and current.</p></div>
+<p>Every registration a procuring entity expects, held and current.</p></div>
 <div class="regs">{regs_html}</div></div></section>
 <section class="sec" style="text-align:center"><div class="wrap">
 <a class="btn" href="quote.html">Request a Quote</a></div></section>"""
-page("about.html", f"About Us — {BRAND}", "About FAVDAVCON AND CG NIG LTD: vision, mission and full federal registrations — CAC, BPP, SCUML, PenCom, NSITF, ITF.", "about.html", about_body)
+page("about.html", f"About Us | {BRAND}", "About FAVDAVCON AND CG NIG LTD: vision, mission and full federal registrations, CAC, BPP, SCUML, PenCom, NSITF, ITF.", "about.html", about_body)
 
 # ---------- PRODUCTS HUB ----------
 prod_body = f"""
@@ -276,7 +276,7 @@ prod_body = f"""
 <h2 style="font-size:clamp(1.4rem,4vw,2rem)">Don't see exactly what you need?</h2>
 <p style="color:var(--muted);margin:12px auto 24px;max-width:52ch">We procure to specification. Describe your requirement and we will source it.</p>
 <a class="btn" href="quote.html">Request a Quote</a></div></section>"""
-page("products.html", f"Products & Services — {BRAND}", "Uniforms and accoutrements, boots and field kit, security systems, office supply, operational vehicles, printing and environmental services.", "products.html", prod_body)
+page("products.html", f"Products & Services | {BRAND}", "Uniforms and accoutrements, boots and field kit, security systems, office supply, operational vehicles, printing and environmental services.", "products.html", prod_body)
 
 # ---------- CATEGORY PAGES ----------
 for slug, title, heroimg, intro, items in CATS:
@@ -289,7 +289,7 @@ for slug, title, heroimg, intro, items in CATS:
 <p style="margin-top:30px;color:var(--ink-soft)">All items are supplied to institutional specification and in bulk quantities. Pricing is provided by formal quotation.</p>
 <div style="margin-top:20px"><a class="btn" href="quote.html?c={slug}">Request a Quote for {title}</a></div>
 </div></section>"""
-    page(f"{slug}.html", f"{title} — {BRAND}", f"{intro}", "products.html", body)
+    page(f"{slug}.html", f"{title} | {BRAND}", f"{intro}", "products.html", body)
 
 # ---------- LEADERSHIP ----------
 lead_body = f"""
@@ -300,14 +300,14 @@ lead_body = f"""
 <div><span class="eyebrow">Chief Executive Officer</span>
 <h2 style="font-size:clamp(1.5rem,3.8vw,2.2rem)">Major Barr. Christopher Onowoakpor Imegu (rtd)</h2>
 <p style="color:var(--gold-d);font-weight:700;letter-spacing:.08em;font-size:.85rem;text-transform:uppercase;margin:8px 0 16px">LL.B · B.L · LL.M · Ph.D (in view) · Dip. Security Management</p>
-<p style="color:var(--ink-soft);margin-bottom:12px">Enlisted into the Nigerian Army in 1990 and commissioned in 2002, our CEO rose to the rank of Major before his voluntary retirement in June 2024 — after 34 years and six months of service.</p>
-<p style="color:var(--ink-soft);margin-bottom:12px">Commissioned into the Nigerian Army Ordinance Corps, he was subsequently seconded to the Directorate of Legal Services, where he served for nearly two decades — including as SO2 Military Justice, Legal Officer at the Directorate of Legal Services, and Deputy Director Legal Services at Army Headquarters, where he doubled as Procurement Legal Officer. He later served as Deputy Director Legal Services at 3 Division Headquarters, Division Legal Adviser to the GOC 3 Armoured Division, at Defence Headquarters Garrison, Mogadishu Cantonment, and finally with 7 Division Legal Services as Legal Adviser to the GOC.</p>
+<p style="color:var(--ink-soft);margin-bottom:12px">Enlisted into the Nigerian Army in 1990 and commissioned in 2002, our CEO rose to the rank of Major before his voluntary retirement in June 2024, after 34 years and six months of service.</p>
+<p style="color:var(--ink-soft);margin-bottom:12px">Commissioned into the Nigerian Army Ordinance Corps, he was subsequently seconded to the Directorate of Legal Services, where he served for nearly two decades, including as SO2 Military Justice, Legal Officer at the Directorate of Legal Services, and Deputy Director Legal Services at Army Headquarters, where he doubled as Procurement Legal Officer. He later served as Deputy Director Legal Services at 3 Division Headquarters, Division Legal Adviser to the GOC 3 Armoured Division, at Defence Headquarters Garrison, Mogadishu Cantonment, and finally with 7 Division Legal Services as Legal Adviser to the GOC.</p>
 <p style="color:var(--ink-soft);margin-bottom:12px">His military education includes the Ordinance Basic Course, Young Infantry Course, Military Justice, Legal Aspects of Counter-Terrorism (United States), and Junior and Senior Courses at the Armed Forces Command and Staff College, Jaji.</p>
-<p style="color:var(--ink-soft)">That experience — inside military procurement itself — is the foundation of FAVDAVCON AND CG NIG LTD: there is no doubt that quality and suitable materials will be procured, toward an Army adequately kitted for the sustenance of peace and security in Nigeria.</p>
+<p style="color:var(--ink-soft)">That experience inside military procurement itself is the foundation of FAVDAVCON AND CG NIG LTD: there is no doubt that quality and suitable materials will be procured, toward an Army adequately kitted for the sustenance of peace and security in Nigeria.</p>
 </div></div></section>
 <section class="sec dark" style="text-align:center"><div class="wrap">
 <a class="btn" href="quote.html">Request a Quote</a></div></section>"""
-page("leadership.html", f"Leadership — {BRAND}", "Major Barr. Christopher Onowoakpor Imegu (rtd), CEO — 34 years of Nigerian Army service including procurement legal oversight at Army Headquarters.", "leadership.html", lead_body)
+page("leadership.html", f"Leadership | {BRAND}", "Major Barr. Christopher Onowoakpor Imegu (rtd), CEO, 34 years of Nigerian Army service including procurement legal oversight at Army Headquarters.", "leadership.html", lead_body)
 
 # ---------- QUOTE ----------
 opts = "".join(f"<option value=\"{t}\">{t}</option>" for _,t,_,_,_ in CATS) + "<option>Other / Multiple Categories</option>"
@@ -316,7 +316,7 @@ quote_body = f"""
 <h1>Request a Quote</h1><p>Describe your requirement and our team will respond with a formal quotation promptly. All enquiries are treated in confidence.</p></div></section>
 <section class="sec"><div class="wrap"><div class="f-card">
 <form action="https://formsubmit.co/{EMAIL}" method="POST">
-<input type="hidden" name="_subject" value="QUOTE REQUEST — Favdavcon Website">
+<input type="hidden" name="_subject" value="QUOTE REQUEST, Favdavcon Website">
 <input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
 <div class="f-row"><label for="q-name">Contact Name</label><input id="q-name" name="Name" required placeholder="e.g. Capt. A. Bello / Mrs. Ada Obi"></div>
 <div class="f-row"><label for="q-org">Organisation / Institution</label><input id="q-org" name="Organisation" required placeholder="e.g. Ministry, unit, company"></div>
@@ -331,7 +331,7 @@ quote_body = f"""
 const c=new URLSearchParams(location.search).get('c');
 if(c){{const map={{{",".join(f'"{s}":"{t}"' for s,t,_,_,_ in CATS)}}};const v=map[c];const s=document.getElementById('q-cat');if(v)s.value=v;}}
 </script>"""
-page("quote.html", f"Request a Quote — {BRAND}", "Request a formal quotation for uniforms, field kit, security systems, office supply, vehicles or printing services.", "quote.html", quote_body)
+page("quote.html", f"Request a Quote | {BRAND}", "Request a formal quotation for uniforms, field kit, security systems, office supply, vehicles or printing services.", "quote.html", quote_body)
 
 # ---------- CONTACT ----------
 contact_body = f"""
@@ -344,7 +344,7 @@ contact_body = f"""
 </div>
 <div style="text-align:center;margin-top:36px"><a class="btn" href="quote.html">Request a Quote</a></div>
 </div></section>"""
-page("contact.html", f"Contact — {BRAND}", f"Contact FAVDAVCON AND CG NIG LTD — {ADDR}. Phone {PHONE1}.", "contact.html", contact_body)
+page("contact.html", f"Contact | {BRAND}", f"Contact FAVDAVCON AND CG NIG LTD, {ADDR}. Phone {PHONE1}.", "contact.html", contact_body)
 
 # ---------- LEGAL ----------
 terms_body = f"""
@@ -359,13 +359,13 @@ terms_body = f"""
 <h2>7. Governing law</h2><p>These terms are governed by the laws of the Federal Republic of Nigeria.</p>
 <h2>8. Contact</h2><p>Questions may be directed to {EMAIL} or {PHONE1}.</p>
 </div></section>"""
-page("terms.html", f"Terms & Conditions — {BRAND}", "Terms of use of the FAVDAVCON AND CG NIG LTD website.", "", terms_body)
+page("terms.html", f"Terms & Conditions | {BRAND}", "Terms of use of the FAVDAVCON AND CG NIG LTD website.", "", terms_body)
 
 privacy_body = f"""
 <section class="pagehero"><div class="wrap"><h1>Privacy Policy</h1><p>How {BRAND} handles your information. Last updated: July 2026.</p></div></section>
 <section class="sec legal"><div class="wrap" style="max-width:800px">
 <h2>1. Who we are</h2><p>{BRAND} ("the Company"), RC 7971283, of {ADDR}, is committed to protecting your privacy in line with the Nigeria Data Protection Act.</p>
-<h2>2. Information we collect</h2><ul><li><strong>Quote requests</strong> — the details you submit: name, organisation, phone, email and requirement description.</li><li><strong>Correspondence</strong> — records of communications with us by phone, WhatsApp or email.</li></ul><p>This website does not use tracking or advertising cookies.</p>
+<h2>2. Information we collect</h2><ul><li><strong>Quote requests</strong>, the details you submit: name, organisation, phone, email and requirement description.</li><li><strong>Correspondence</strong>, records of communications with us by phone, WhatsApp or email.</li></ul><p>This website does not use tracking or advertising cookies.</p>
 <h2>3. How we use information</h2><p>Solely to respond to your enquiry, prepare quotations, perform contracts, maintain business records and comply with legal obligations. We do not sell your information.</p>
 <h2>4. Form delivery</h2><p>Requests submitted through the website form are transmitted to the Company's email via a form-delivery service. By submitting, you consent to this transmission.</p>
 <h2>5. Disclosure</h2><p>We do not disclose your information to third parties except as necessary to fulfil your request or where required by law.</p>
@@ -373,13 +373,13 @@ privacy_body = f"""
 <h2>7. Your rights</h2><p>You may request access to, correction of, or deletion of your personal information by contacting us.</p>
 <h2>8. Contact</h2><p>{EMAIL} · {PHONE1}</p>
 </div></section>"""
-page("privacy.html", f"Privacy Policy — {BRAND}", "Privacy policy of the FAVDAVCON AND CG NIG LTD website.", "", privacy_body)
+page("privacy.html", f"Privacy Policy | {BRAND}", "Privacy policy of the FAVDAVCON AND CG NIG LTD website.", "", privacy_body)
 
 thanks_body = f"""
 <section class="pagehero" style="min-height:56vh;display:flex;align-items:center"><div class="wrap" style="text-align:center;width:100%">
 <h1 style="color:var(--gold)">Request Received</h1>
-<p style="margin:14px auto 26px">Thank you — your quote request has been received. Our team will respond promptly. For urgent requirements, call <a href="tel:{TEL1}" style="color:var(--white);font-weight:700">{PHONE1}</a>.</p>
+<p style="margin:14px auto 26px">Thank you, your quote request has been received. Our team will respond promptly. For urgent requirements, call <a href="tel:{TEL1}" style="color:var(--white);font-weight:700">{PHONE1}</a>.</p>
 <a class="btn" href="index.html">Return to Website</a></div></section>"""
-page("thanks.html", f"Request Received — {BRAND}", "Your quote request has been received.", "", thanks_body)
+page("thanks.html", f"Request Received | {BRAND}", "Your quote request has been received.", "", thanks_body)
 
 print("Generated pages:", len([f for f in os.listdir('.') if f.endswith('.html')]))
